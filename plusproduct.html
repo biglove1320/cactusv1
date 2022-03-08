@@ -7,6 +7,8 @@
     <title>StoreShop</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="/lib/jquery-1.12.2.min.js"></script>
+
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light " data-spy="affix" data-offset-top="197"
@@ -61,7 +63,7 @@
     </div>
 
 
-    <div style="width: 225px; height: 537px;background-color: #EFEFEF;position: absolute; top: 420px; left: 250px;">
+    <div style="width: 225px; height: 620px;background-color: #EFEFEF;position: absolute; top: 420px; left: 250px;">
         <h3 style="position: absolute;top: 20px; left: 15px;">Colleotion ALL</h3>
         <div class="btn-group-vertical" style="width: 225px;margin-top: 70px;" >
             <button style="border-style:none ;" type="button" class="btn btn-outline-secondary" >Cactus</button>
@@ -76,12 +78,106 @@
     </div>
 
 
-    <div class="formproduct" style="position: absolute; width: 1068px; height: 537px; background-color: #C4C4C4; left: 480px; top: 420px;">
+    <div class="formproduct" style="position: absolute; width: 1068px; height: 620px; background-color: #ffff; left: 480px; top: 420px;">
         <h5 style="position: absolute;top: 30px;left: 30px;">เพิ่มสินค้าใหม่</h5> 
         <div>
             <h6 style="position: absolute;position: absolute; top:80px; left: 30px;">ชื่อสินค้า :</h6>
             <input style="width: 350px;height: 30px; position: absolute; top: 75px; left: 100px;" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
         </div>
+
+
+        <h6 style="position: absolute; top:170px ; left: 20px;">เลือกรูปภาพ :</h6>
+        <div class="mb-3 text-center" style="position: absolute;top: 135px; left: 120px;">
+            <label for="formFile" class="form-label"></label>
+            <input class="form-control" type="file" id="formFile" placeholder="เลือกรูปภาพ">
+          </div>
+
+        <div class="mb-3" style="position: absolute; top: 74px; left: 600px;">
+            <select style="height: 30px;width: 150px; height: 30px;" class="form-select" required aria-label="select example" >
+              <option  value="">หมวดหมู่</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+        </div>
+
+        <div class="mb-3" style="position: absolute;top: 130px;left: 600px;">
+            <label for="exampleFormControlTextarea1" class="form-label" style="width: 350px;">รายละเอียด :</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+
+        <div class="price" >
+            <h6 style="position: absolute; top: 290px; left: 40px;">ราคา :</h6>
+            <input style="width: 100px;height: 30px; position: absolute; top: 283px; left: 100px;" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <h6 style="position: absolute; top: 290px; left: 280px;">คลัง :</h6>
+            <input style="width: 100px;height: 30px; position: absolute; top: 283px; left: 330px;" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+            <h6 style="position: absolute; top: 290px; left: 520px;">Size :</h6>
+            <input style="width: 100px;height: 30px; position: absolute; top: 283px; left: 565px;" type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm">
+        </div>
+
+        <div class="delivery">
+            <h5 style="position: absolute; top: 330px;left: 40px;">การจัดส่ง </h5>
+            <div class="input-group mb-3"  style="position: absolute; top: 380px;width: 150px;left: 40px;">
+                <input type="text" class="form-control" placeholder="น้ำหนัก" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">Kg</span>
+            </div>
+
+            <h6 style="position: absolute;top: 390px; left:280px;">ขนาดพัสดุ :</h6>
+            
+            <div class="input-group mb-3"  style="position: absolute; top: 380px;width: 150px;left: 370px;">
+                <input type="text" class="form-control" placeholder="กว้าง" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">Cm</span>
+            </div>
+
+            <div class="input-group mb-3"  style="position: absolute; top: 380px;width: 150px;left: 550px;">
+                <input type="text" class="form-control" placeholder="ยาว" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">Cm</span>
+            </div>
+
+            <div class="input-group mb-3"  style="position: absolute; top: 380px;width: 150px;left: 730px;">
+                <input type="text" class="form-control" placeholder="สูง" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text" id="basic-addon2">Cm</span>
+            </div>
+
+            <div class="input-group mb-3" style="position: absolute; top: 450px;left: 40px;">
+                <label class="input-group-text" for="inputGroupSelect01">ค่าจัดส่ง :</label>
+                <select class="form-select" id="inputGroupSelect01" style="width: 100px;">
+                  <option selected></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="button" class="btn btn-outline-secondary" style="position: absolute; top: 530px;left:350px;">บันทึกเป็นแบบร่าง</button>
+                <button type="button" class="btn btn-outline-secondary" style="position: absolute; top: 530px;left:570px;">บันทึกและเผยแพร่</button>
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+    </div>
+
+
+   
+      
+        
+    
+
+    
+
+
+
         
       
 
