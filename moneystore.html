@@ -4,20 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>การจัดส่ง</title>
+    <title>การเงิน</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <link rel="stylesheet" href="//apps.bdimg.com/libs/jqueryui/1.10.4/css/jquery-ui.min.css">
-  <script src="//apps.bdimg.com/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script src="//apps.bdimg.com/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="jqueryui/style.css">
-
-  <script>
-  $(function() {
-    $( "#datepicker" ).datepicker();
-  });
-  </script>
 </head>
 <body>
     <nav class="navbar navbar-expand-sm navbar-light " data-spy="affix" data-offset-top="197"
@@ -65,9 +54,9 @@
     <div class="btn-group mx-auto" style="position: absolute;top: 380px;left: 250px;">
         <a href="homepagestore.html" class="btn btn-outline-secondary " aria-current="page">หน้าแรก</a>
         <a href="plusproduct.html" class="btn btn-outline-secondary ">สินค้า</a>
-        <a href="storedelivery.html" class="btn btn-outline-secondary active">การจัดส่ง</a>
+        <a href="storedelivery.html" class="btn btn-outline-secondary">การจัดส่ง</a>
         <a href="orderstore.html" class="btn btn-outline-secondary">คำสั่งซื้อ</a>
-        <a href="moneystore.html" class="btn btn-outline-secondary">การเงิน</a>
+        <a href="moneystore.html" class="btn btn-outline-secondary active ">การเงิน</a>
         <a href="#" class="btn btn-outline-secondary">การบริการลูกค้า</a>
     </div>
 
@@ -81,74 +70,90 @@
             <button style="border-style:none ;" type="button" class="btn btn-outline-secondary">Decaration</button>
             <button style="border-style:none ;" type="button" class="btn btn-outline-secondary">Fertilizer</button>
             <button style="border-style:none ;" type="button" class="btn btn-outline-secondary">Pulses</button>
-        </div>  
-    </div>  
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    <div class="input-group mb-3" style="width: 300px; position: absolute; top: 450px; left: 520px;">
-        <input  type="text" class="form-control" placeholder="กำหนดคำสั่งซื้อ" aria-label="Recipient's username" aria-describedby="button-addon2">
-        <button class="btn btn-outline-secondary" type="button" id="button-addon2">ค้นหา</button>
-    </div>
-
-    
-    <div style="position: absolute;top:460px;left: 1000px;">
-        <p>วันที่ทำการสั่งซื้อ:</p>
-    </div>
-    <div class="date" style="position: absolute; left: 1120px;top: 457px;">
-        <p><input type="text" id="datepicker" value="เดือน/วัน/ปี"></p>
-    </div>
-
-    <button style="position: absolute; top: 453px;left: 1330px;" type="button" class="btn btn-outline-secondary">ส่งออก</button>
-
-    <div>
-        <h6 style="position: absolute; top: 550px;left: 1000px;">เรียงตาม :</h6>
-        <div class="input-group mb-3" style="position: absolute; top: 545px;left: 1100px;">
-            <select class="form-select" id="inputGroupSelect02" style="width: 200px;height: 30px;">
-              <option selected></option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
         </div>
 
-        <button style="position: absolute; top: 540px;left: 1330px;" type="button" class="btn btn-outline-secondary">จัดส่งแบบชุด</button>
+
+    </div>
+
+
+    <div>
+        <h5 style="position: absolute; top: 450px;left: 520px;">ภาพรวมรายรับของฉัน</h5>
+        <p style="position: absolute; top: 490px;left: 540px;">เตรียมการโอนเงิน</p>
+        <p style="position: absolute; top: 530px;left: 540px;">รวม</p>
+        <p style="position: absolute; top: 570px;left: 540px;">THB</p> 
+        <p style="position: absolute; top: 570px;left: 580px;">0</p>
+
+        <p style="position: absolute; top: 490px;left: 840px;">โอนเงินแล้ว</p>
+
+        <p style="position: absolute; top: 530px;left: 850px;">สัปดาห์นี้</p>
+        <p style="position: absolute; top: 570px;left: 860px;">THB</p>
+        <p style="position: absolute; top: 570px;left: 895px;">0</p>
+
+        <p style="position: absolute; top: 530px;left: 950px;">เดือนนี้</p>
+        <p style="position: absolute; top: 570px;left: 950px;">THB</p>
+        <p style="position: absolute; top: 570px;left: 985px;">0</p>
+
+        <p style="position: absolute; top: 530px;left: 1050px;">รวม</p>
+        <p style="position: absolute; top: 570px;left: 1050px;">THB</p>
+        <p style="position: absolute; top: 570px;left: 1085px;">0</p>
+
+        <div style="width: 330px; height: 249px;background-color:#EFEFEF;position: absolute;top: 450px;left: 1230px;">
+            <h6 style="margin-top: 20px; margin-left: 20px;">รายงานการเงิน</h6>
+
+            <h6 style="margin-left:20px ;">1 ธ.ค.  - 31 ธ.ค. 2020</h6> 
+            <button style="position: absolute;left: 210px;top: 35px;" type="button" class="btn btn-secondary">Download</button>
+            <h6 style="margin-left:20px ;margin-top: 30px;">26 ธ.ค. - 3 ม.ค. 2021</h6>
+            <button style="position: absolute;left: 210px;top: 85px;" type="button" class="btn btn-secondary">Download</button>
+            <h6 style="margin-left:20px ;margin-top: 30px;">21 ธ.ค. - 27 ธ.ค. 2020</h6>
+            <button style="position: absolute;left: 210px;top: 135px;" type="button" class="btn btn-secondary">Download</button>
+            <h6 style="margin-left:20px ;margin-top: 30px;">14 ธ.ค. - 20 ธ.ค. 2020</h6>
+            <button style="position: absolute;left: 210px;top: 185px;" type="button" class="btn btn-secondary">Download</button>
+
+
+        </div>
+
+
+        <div style="width: 1070px;background-color:#EFEFEF;height: 45px; position: absolute; top: 750px;left: 490px;">
+            <h5 style="margin-top: 10px;margin-left: 10px;">รายละเอียดรายวันของฉัน</h5>
+        </div>
+
+        <table class="table">
+            <thead class="table-secondary" style="position: absolute;top: 810px; width: 1070px;left: 490px;">
+                <tr>
+                    <th scope="col">คำสั่งซื้อ</th>
+                    <th scope="col">ผู้ซื้อ</th>
+                    <th scope="col">วันที่กระทำรายการ</th>
+                    <th scope="col">สถานะ</th>
+                    <th scope="col">จำนวนเงินที่โอน</th>
+                  </tr>
+            </thead>
+        </table>
+
+        <div style="width: 1070px;background-color:#EFEFEF;height: 68px; position: absolute; top: 880px;left: 490px;">
+            <h5 class="text-center" style="margin-top: 20px;">ไม่มีข้อมูล</h5>
+        </div>
+
+
+        
+         
     </div>
 
 
 
-    <table class="table" style="position: absolute;top: 620px; width: 1070px;left: 480px;">
-        <thead class="table-dark">
-            <th scope="col">สิ้นค้าทั้งหมด</th>
-            <th scope="col">ราคารวม</th>
-            <th scope="col">สถานะ</th>
-            <th scope="col">ทุกช่องทาง</th>
-            <th scope="col">ดำเนินการ</th>
-        </thead>
-        <tbody>
-            <tr class="border border-secondary">
-                <th scope="row"></th>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            
-            <tr class="border border-secondary">
-                <th scope="row"></th>
-                <td ></td>
-                <td class="text-center">ไม่พบคำสั่งซื้อ</td>
-                <td></td>
-            </tr>
-            
-        </tbody>
-      </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
